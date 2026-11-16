@@ -23,7 +23,8 @@ public class KloccCosmeticsClient implements ClientModInitializer {
         LivingEntityFeatureRendererRegistrationCallback.EVENT.register(
                 (entityType, entityRenderer, registrationHelper, context) -> {
                     if (entityType == EntityType.PLAYER && entityRenderer instanceof PlayerEntityRenderer renderer) {
-                        registrationHelper.register(new WingsFeatureRenderer(renderer, context.getEntityModels()));
+                        registrationHelper.register(new WingsFeatureRenderer(renderer,
+                                context.getEntityModels().getModelPart(KloccWingsModel.LAYER)));
                     }
                 });
 
