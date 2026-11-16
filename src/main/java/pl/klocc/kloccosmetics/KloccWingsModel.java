@@ -17,7 +17,7 @@ public class KloccWingsModel {
 
     public static final float W = 16f, H = 20f;
     /** punkt zaczepienia na plecach (w pikselach modelu) */
-    public static final float PX = 1.5f, PY = 1f, PZ = 2.6f;
+   public static final float PX = 1.5f, PY = -3f, PZ = 2.6f;
 
     private final ModelPart group;
     private final ModelPart left;
