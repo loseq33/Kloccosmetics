@@ -33,7 +33,7 @@ public class WingsFeatureRenderer extends FeatureRenderer<PlayerEntityRenderStat
         matrices.push();
         float px = 0f, py = KloccWingsModel.PY / 16f, pz = KloccWingsModel.PZ / 16f;
         matrices.translate(px, py, pz);
-        matrices.scale(type.scale * 0.75f, type.scale, type.scale);
+       matrices.scale(type.scale * 0.65f, type.scale, type.scale);
         matrices.translate(-px, -py, -pz);
 
         VertexConsumer vc = vertexConsumers.getBuffer(RenderLayer.getEntityCutoutNoCull(type.texture));
